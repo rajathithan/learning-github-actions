@@ -7,6 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: my welcome message
-          run: "Echo my first run!!"
+          run: echo "my first run!!"
 
 
