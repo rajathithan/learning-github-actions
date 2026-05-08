@@ -8,5 +8,11 @@ jobs:
         steps:
         - name: my welcome message
           run: echo "my first run!!"
+        - name: Checkout
+          uses: actions/checkout@v6.0.2
+        - name: List files
+          run: ls -a
+        - name: Read readme
+          run: cat README.md
 
 
