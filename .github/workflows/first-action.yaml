@@ -21,7 +21,7 @@ jobs:
         - name: external package
           run: sudo apt install -y cowsay 
         - name: create dragon
-          run: cowsay -f tiger "I am the real king of the jungle !!!" >> tiger.txt
+          run: cowsay -f dragon "I am the real king of the jungle !!!" >> tiger.txt
 
 
 
