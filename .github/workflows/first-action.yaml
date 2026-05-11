@@ -14,5 +14,15 @@ jobs:
           run: ls -a
         - name: Read readme
           run: cat README.md
+        - name: run everything
+          run: |
+            echo "multiple commands in one line"
+            ls -Ral
+        - name: external package
+          run: sudo apt install -y cowsay 
+        - name: create dragon
+          run: cowsay -f tiger "I am the real king of the jungle !!!" >> tiger.txt
+
+
 
 
