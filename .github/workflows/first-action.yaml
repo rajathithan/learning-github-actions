@@ -13,15 +13,20 @@ jobs:
         - name: List files
           run: ls -a
         - name: Read readme
-          run: cat README.md
-        - name: run everything
-          run: |
-            echo "multiple commands in one line"
-            ls -Ral
+          run: cat README.md       
         - name: external package
           run: sudo apt install -y cowsay 
         - name: create dragon
-          run: cowsay -f dragon "I am the real king of the jungle !!!" >> tiger.txt
+          run: cowsay -f dragon "I am the real king of the jungle !!!" >> dragon.txt
+        - name: run everything
+          run: |
+            echo "list the files"
+            ls -Ral
+        - name: check file exists
+          run: grep -i "dragon" dragon.txt
+        - name: read file
+          run: cat dragon.txt 
+
 
 
 
