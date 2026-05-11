@@ -24,6 +24,8 @@ jobs:
             ls -Ral
         - name: read file
           run: cat dragon.txt 
+        - name: make shell script executable
+          run: chmod +x ascii_script.sh
         - name: executing shell script
           run: ./ascii_script.sh
 
