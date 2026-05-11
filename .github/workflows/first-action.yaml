@@ -22,8 +22,6 @@ jobs:
           run: |
             echo "list the files"
             ls -Ral
-        - name: check file exists
-          run: grep -i "dragon" dragon.txt
         - name: read file
           run: cat dragon.txt 
 
