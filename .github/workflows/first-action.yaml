@@ -32,6 +32,8 @@ jobs:
         runs-on: ubuntu-latest
         needs: Second_job
         steps:
+        - name: external package
+          run: sudo apt install -y cowsay 
         - name: Checkout
           uses: actions/checkout@v6.0.2
         - name: List files
